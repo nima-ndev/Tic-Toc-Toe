@@ -1,0 +1,54 @@
+/*#7724f8 main color*/
+/*#481d8b  font color*/
+/*#f4ecf5 main background*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #481d8b;
+    background-color: #f4ecf5;
+}
+header{
+    background-color: #7724f8;
+    color: white;
+    padding: 50px 0 45px 0;
+    text-align: center;
+}
+header h3{
+    padding-top: 20px;
+    color: #e1e1e1;
+}
+
+.btn{
+    padding: 10px;
+    border: none;
+    background-color: #7724f8;
+    color: white;
+    border-radius: 5px;
+    width: 6rem;
+    height: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-type2{
+    background-color: #f4ecf5;
+    color: #7724f8;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-type2:hover{
+    background-color: #e9deff;
+}
+input{
+    width: 17rem;
+    padding: 0.50rem;
+    border: solid 1px #7724f8;
+    border-radius: 5px;
+}
+.wrong{
+    border:solid 1.5px #ec4c4c;
+    color: white;
+}

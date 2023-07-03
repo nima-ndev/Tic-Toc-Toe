@@ -1,0 +1,69 @@
+.cart{
+    display: grid;
+    grid-template-columns: 17% 17%;
+    justify-content: center;
+    margin-top: 90px;
+    column-gap: 7%;
+    row-gap: 50px;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ecd7ff;
+    align-items: center;
+    padding-top: 2.5%;
+    border-radius: 15px;
+    box-shadow:5px 5px 12px rgba(206,206,206,0.83);
+    transition: 0.3s;
+}
+.cart .icon{
+    width: 94%;
+    height: 13.5rem;
+    font-size: 180px;
+    color: #656565;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart .icon span{
+    transition: 0.3s;
+}
+.player h3{
+    color: #656565;
+}
+.player .playerName{
+    font-size: 30px;
+    font-weight: 800 ;
+}
+.player button{
+    color: #481d8b;
+    background: transparent;
+    border: none;
+    padding-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cart .start{
+    grid-column: 1/span 2;
+    text-align: center;
+}
+.cart .btn{
+    width: 25rem;
+    box-shadow: 8px 8px 20px #9f65f8;
+    transition: 0.3s;
+}
+.cart .btn:hover{
+    cursor: pointer;
+    width: 26rem;
+}
+
+.player:hover .icon span{
+    color: rgba(119, 36, 248, 0.77);
+    transform: scale(1.1);
+}
+.player:hover {
+    box-shadow:9px 9px 12px rgba(206,206,206,0.83);
+}

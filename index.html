@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/firstgameStyle.css">
+    <link rel="stylesheet" href="styles/edit-window.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/board-game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/board.js" defer></script>
+    <script src="JS/config.js" defer></script>
+    <script src="JS/app.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Play Tic,Tac,Toe</h1>
+    <h3>Built whith HTML,CSS,JavaScript and - of course - browser</h3>
+</header>
+<aside>
+    <form class="aside-box">
+        <img src="files/x-edit.png" class="edit-design" id="img1">
+        <img src="files/o-edit.png" class="edit-design" id="img2">
+        <h1 id="right-space">Chose your name</h1>
+        <div class="input" >
+            <label for="right-space"  id="right-space">player name</label>
+            <input name="playername" type="text"  id="right-space">
+        </div>
+        <span id="right-space"class="eror"></span>
+        <button id="right-space" class="first-button btn btn-type2" >Cancel</button>
+        <button type="submit" id="right-space" class="confirmBtn btn">Confirm</button>
+    </form>
+    <div class="dark"></div>
+</aside>
+<section class="cart">
+    <article class="player player-1">
+        <div class="icon"><span>X</span></div>
+        <h3>player 1</h3>
+        <span class="playerName playerName1">Player 1</span>
+        <button data-btn="1">Edit</button>
+    </article>
+    <article class="player player-2">
+        <div class="icon"><span>O</span></div>
+        <h3>player 2</h3>
+        <span class="playerName playerName2">Player 2</span>
+        <button data-btn="2">Edit</button>
+    </article>
+    <div class="start"><button class="btn" id="startNewGame"><i class="fa fa-play"></i> Start New Game</button></div>
+</section>
+<section class="board-game">
+    <div class="result">
+        <h1>You won <span id="winner"></span></h1>
+        <span>Click"start New Game" above, to start a new game!</span>
+    </div>
+    <p class="turn">It's your turn <span id="turn">player 1</span></p>
+    <div class="game-board">
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+
+            <li></li>
+            <li></li>
+            <li></li>
+
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</section>
+
+
+<br><br><br><br>
+</body>
+</html>
